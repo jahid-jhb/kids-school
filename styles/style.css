@@ -133,12 +133,10 @@ nav button{
     .hero{
         display: flex;
         flex-direction: column-reverse;
+        text-align: center;
     }
     .hero img{
         width: calc(100% - 16px);
-    }
-    .hero>div:first-child{
-        text-align: center;
     }
     
 }
