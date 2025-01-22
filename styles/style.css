@@ -45,6 +45,7 @@ header{
 .bar{
     display: none;  /*It's only work for mobile device*/
 }
+
 /* navbar area design */
 header>nav{
     display: flex;
@@ -108,10 +109,6 @@ nav button{
 
 
 /* main section styles */
-
-/* main{
-    padding: 60px 140px 0px;
-} */
 
 /* curriculum area style */
 
@@ -277,6 +274,64 @@ nav button{
 .story button{
     background-color: #111111;
     padding: 10px 60px;
+    margin-bottom: 60px;
+}
+
+
+/* footer section styles */
+footer{
+    padding: 125px 140px 175px;
+    background-color: #01ACFD;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+}
+footer>div:first-child{
+    width: calc(50vw - 280px);
+}
+footer>div:first-child>p{
+    font-size: 1.2rem;
+    margin-top: 35px;
+}
+footer>div>.footer-logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+footer>div>.footer-logo>h3{
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+footer img{
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+footer .link{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+footer .link>h4{
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+footer .link>a{
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #fff;
+}
+
+footer .social-media-icon>h4{
+    font-size: 1.525rem;
+    font-weight: 700;
+    margin-bottom: 32px;
+}
+footer .social-media-icon>.icon{
+    display: flex;
+    gap: 10px;
 }
 
 
@@ -354,6 +409,20 @@ nav button{
     .story .date{
         padding: 8px 14px;
         left: 8px;
+    }
+
+
+    /* footer section responsive */
+    footer{
+        flex-direction: column;
+        padding: 75px 20px 75px;
+    }
+    footer>div:first-child{
+        width: calc(100vw - 40px);
+    }
+
+    footer .link{
+        margin: 32px 0px;
     }
     
     
