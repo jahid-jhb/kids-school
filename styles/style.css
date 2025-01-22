@@ -86,6 +86,31 @@ nav button{
     padding: 10px 60px;
 }
 
+/* news section style */
+header>.news-box{
+    display: flex;
+    align-items: center;
+    margin: 25px 0px;
+    border: 1px solid #05D4DF;
+    border-right: none;
+}
+header>.news-box>span{
+    font-weight: 600;
+    color: #fff;
+    font-size: 20px;
+    position: relative;
+    display: inline-block;
+    flex-shrink: 0;
+    padding: 8px 20px;
+    background: #05D4DF;
+    clip-path: polygon(0 0, 80% 0, 100% 100%, 0 100%);
+}
+header>.news-box>marquee{
+    font-weight: 500;
+    color: #95B226;
+    background: #fff;
+}
+
 /* hero area design */
 
 .hero{
@@ -280,7 +305,7 @@ nav button{
 
 /* footer section styles */
 footer{
-    padding: 125px 140px 175px;
+    padding: 125px 140px 125px;
     background-color: #01ACFD;
     color: #fff;
     display: flex;
