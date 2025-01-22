@@ -109,15 +109,16 @@ nav button{
 
 /* main section styles */
 
-main{
+/* main{
     padding: 60px 140px 0px;
-}
+} */
 
 /* curriculum area style */
 
 .curriculum{
     text-align: center;
     background-image: url(../assets/bg.png);
+    padding: 60px 140px 0px;
 }
 
 .curriculum>h3{
@@ -188,11 +189,95 @@ main{
     font-size: 1.5rem;
     padding: 18px 22px;
     border-radius: 50%;
+    cursor: pointer;
 }
 .more-for-arrow i:nth-child(2){
     margin-left: 10px;
 }
 
+
+/* story area styles */
+
+.story{
+    background: url(../assets/bg.png), linear-gradient(to top, rgba(254, 163, 1, 0.4), #FFFFFF);
+    margin-top: 60px;
+    padding: 60px 140px 0px;
+}
+.story>h3{
+    font-size: 2.875rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.story-1{
+    grid-area: story-1;
+    width: 35vw;
+}
+.story-2{
+    grid-area: story-2;
+}
+.story-3{
+    grid-area: story-3;
+}
+.story-4{
+    grid-area: story-4;
+}
+.story-5{
+    grid-area: story-5;
+}
+.m-story{
+    width: 18vw;
+}
+
+.story .story-box{
+    display: grid;
+    gap: 1.3vw;
+    grid-template-areas: 
+    "story-1 story-2 story-3"
+    "story-1 story-4 story-5" ;
+}
+.story .story-box>div{
+    background-color: #fff;
+    border-radius: 16px;
+}
+.story .story-box img{
+    border-radius: 16px 16px 0px 0px;
+    width: 18vw;
+}
+#first-story{
+    width: 35vw;
+}
+.story h4{
+    margin: 38px 38px 28px;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.story-1-description{
+    font-weight: 500;
+    color: #666666;
+    margin: 38px 38px 28px;
+}
+.story .date{
+    background-color: #95B226;
+    color: #fff;
+    font-weight: 500;
+    padding: 10px 19px;
+    border-radius: 45px;
+    display: inline;
+    position: relative;
+    bottom: 16px;
+    left: 15px;
+}
+
+.story .str-btn{
+    text-align: center;
+    margin-top: 80px;
+}
+.story button{
+    background-color: #111111;
+    padding: 10px 60px;
+}
 
 
 
@@ -200,7 +285,7 @@ main{
 /* responsive for mobile */
 
 @media screen and (max-width: 576px) {
-    header, main{
+    header, .curriculum, .story{
         padding: 12px 16px;
     }
 
@@ -242,12 +327,34 @@ main{
     .curriculum>.more-for-arrow{
         display: none;
     }
+
+
+    /* story area responsive style */
+
+    .m-story{
+        width: 45vw;
+    }
+    .story .story-1{
+        display: none;
+    }
+    .story .story-box{
+        gap: 1vw;
+        grid-template-areas: 
+        "story-2 story-3"
+        "story-4 story-5" ;
+    }
+    .story .story-box img{
+        width: 45vw;
+    }
+
+    .story h4{
+        margin: 24px 24px 14px;
+        font-size: 1rem;
+    }
+    .story .date{
+        padding: 8px 14px;
+        left: 8px;
+    }
     
     
 }
-
-
-/* .curriculum>h3{
-    position: relative;
-    top: 30px;
-} */
