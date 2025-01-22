@@ -13,6 +13,10 @@
 
 /* shared styles */
 
+a{
+    text-decoration: none;
+}
+
 .white{
     color: #f7f7f7;
 }
@@ -23,7 +27,7 @@
     color: #FEA301;
 }
 
-button{
+.button-primary{
     color: #f7f7f7;
     font-size: 1.25rem;
     font-weight: 600;
@@ -36,7 +40,7 @@ button{
 /* header section styles */
 
 header{
-    padding: 20px 140px 60px;
+    padding: 20px 140px 0px;
 }
 .bar{
     display: none;  /*It's only work for mobile device*/
@@ -103,11 +107,100 @@ nav button{
 }
 
 
+/* main section styles */
+
+main{
+    padding: 60px 140px 0px;
+}
+
+/* curriculum area style */
+
+.curriculum{
+    text-align: center;
+    background-image: url(../assets/bg.png);
+}
+
+.curriculum>h3{
+    font-size: 2.875rem;
+    font-weight: 700;
+}
+.card{
+    margin-top: 80px;
+    display: flex;
+    gap: 28px;
+}
+
+.card img{
+    margin-top: 53px;
+}
+
+.card p{
+    color: #808080;
+    font-size: 1rem;
+    font-weight: 500;
+}
+.card h4{
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 32px auto;
+}
+.card a{
+    display: inline-block;
+    font-weight: 700;
+    margin: 38px auto;
+}
+
+.card .card-1{
+    background-image: linear-gradient(#DEF5FF, #FFFFFF);
+    border: 1px solid #DEF5FF;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.card .card-1>a{
+    color: #64C8FF;
+}
+.card .card-2{
+    background-image: linear-gradient(#FFF4DC, #FFFFFF);
+    border: 1px solid #FFF4DC;
+    border-radius: 20px;
+    padding: 20px;
+}
+.card .card-2>a{
+    color: #F0AA00;
+}
+.card .card-3{
+    background-image: linear-gradient(#EEE1FF, #FFFFFF);
+    border: 1px solid #EEE1FF;
+    border-radius: 20px;
+    padding: 20px;
+}
+.card .card-3>a{
+    color: #8700FF;
+}
+
+.curriculum>.more-for-arrow{
+    margin-top: 80px;
+}
+.more-for-arrow i{
+    color: #ffffff;
+    background-color: #FEA301;
+    font-size: 1.5rem;
+    padding: 18px 22px;
+    border-radius: 50%;
+}
+.more-for-arrow i:nth-child(2){
+    margin-left: 10px;
+}
+
+
+
+
 
 /* responsive for mobile */
 
 @media screen and (max-width: 576px) {
-    header{
+    header, main{
         padding: 12px 16px;
     }
 
@@ -138,5 +231,23 @@ nav button{
     .hero img{
         width: calc(100% - 16px);
     }
+
+    /* curriculum section responsive style */
+
+
+    .card{
+        flex-direction: column;
+    }
+
+    .curriculum>.more-for-arrow{
+        display: none;
+    }
+    
     
 }
+
+
+/* .curriculum>h3{
+    position: relative;
+    top: 30px;
+} */
